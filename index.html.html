@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALV Stones — Premium Architectural Stone & Sacred Statues, Hyderabad</title>
+<meta name="description" content="ALV Stones — Premium handcrafted stone statues, Buddha statues, Hindu statues, garden sculptures and architectural stone. Custom designs. Pan-India delivery from Hyderabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & VARIABLES ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+:root {
+  --cream: #F5F0E8;
+  --stone: #C8B89A;
+  --stone-dark: #A89878;
+  --dark: #1A1814;
+  --dark2: #1E1C18;
+  --dark3: #111008;
+  --mid: #3D3730;
+  --mid2: #252320;
+  --warm-grey: #8C8278;
+  --light-grey: #E8E2D9;
+  --white: #FDFAF6;
+  --accent: #B5956B;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', sans-serif;
+  --transition: all 0.3s ease;
+}
+
+body {
+  background: var(--dark);
+  color: var(--white);
+  font-family: var(--sans);
+  font-weight: 300;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--sans); cursor: pointer; }
+ul { list-style: none; }
+
+/* ===== UTILITY ===== */
+.serif { font-family: var(--serif); }
+.stone-color { color: var(--stone); }
+.section-eyebrow {
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.62rem; font-weight: 400; letter-spacing: 0.35em;
+  text-transform: uppercase; color: var(--stone); margin-bottom: 1.2rem;
+}
+.section-eyebrow::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--stone); }
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 300; line-height: 1.1; color: var(--white);
+}
+.section-title em { font-style: italic; color: var(--stone); }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--stone); color: var(--dark);
+  padding: 0.9rem 2.2rem;
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; border: none;
+  transition: var(--transition); cursor: pointer;
+}
+.btn-primary:hover { background: var(--accent); }
+
+.btn-ghost {
+  display: inline-block;
+  color: rgba(253,250,246,0.6);
+  font-size: 0.68rem; font-weight: 400; letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(253,250,246,0.2);
+  padding-bottom: 2px; transition: var(--transition);
+}
+.btn-ghost:hover { color: var(--stone); border-color: var(--stone); }
+
+.btn-outline {
+  display: inline-block;
+  background: transparent; color: var(--stone);
+  border: 1px solid var(--stone);
+  padding: 0.9rem 2.2rem;
+  font-size: 0.68rem; font-weight: 400; letter-spacing: 0.22em;
+  text-transform: uppercase; transition: var(--transition);
+}
+.btn-outline:hover { background: var(--stone); color: var(--dark); }
+
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.4rem 4rem;
+  background: rgba(26,24,20,0.97);
+  border-bottom: 1px solid rgba(200,184,154,0.1);
+  backdrop-filter: blur(8px);
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.6rem; font-weight: 500; letter-spacing: 0.15em; color: var(--white);
+}
+.nav-logo span { color: var(--stone); }
+.nav-links { display: flex; gap: 2.5rem; }
+.nav-links a {
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(253,250,246,0.65);
+  transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--stone); }
+.nav-cta {
+  background: transparent; border: 1px solid var(--stone);
+  color: var(--stone); padding: 0.55rem 1.4rem;
+  font-size: 0.68rem; font-weight: 400; letter-spacing: 0.2em;
+  text-transform: uppercase; transition: var(--transition);
+}
+.nav-cta:hover { background: var(--stone); color: var(--dark); }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: grid; grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+  position: relative; overflow: hidden;
+}
+.hero-left {
+  display: flex; flex-direction: column;
+  justify-content: flex-end; padding: 5rem 4rem 5rem;
+  background: var(--dark); position: relative; z-index: 2;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.62rem; font-weight: 400; letter-spacing: 0.35em;
+  text-transform: uppercase; color: var(--stone); margin-bottom: 1.5rem;
+}
+.hero-eyebrow::before { content: ''; display: block; width: 2.5rem; height: 1px; background: var(--stone); }
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 1.2rem;
+}
+.hero-title em { font-style: italic; color: var(--stone); }
+.hero-sub {
+  font-size: 0.83rem; font-weight: 300;
+  color: rgba(253,250,246,0.5); line-height: 1.85;
+  max-width: 26rem; margin-bottom: 3rem; letter-spacing: 0.03em;
+}
+.hero-actions { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+.hero-right { position: relative; overflow: hidden; }
+.hero-img-grid { display: grid; grid-template-rows: 60% 40%; height: 100%; gap: 3px; }
+.hero-stone-1 { background: linear-gradient(145deg, #3A3028 0%, #6A5A48 35%, #9A8878 60%, #C8B498 85%); }
+.hero-stone-2 { background: linear-gradient(135deg, #2A2820 0%, #5A5040 40%, #9A8870 75%, #C0A880 100%); }
+.hero-badge {
+  position: absolute; top: 2rem; right: 2rem;
+  background: rgba(26,24,20,0.85);
+  border: 1px solid rgba(200,184,154,0.3);
+  padding: 1rem 1.2rem; text-align: center;
+}
+.hero-badge-num { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--stone); line-height: 1; }
+.hero-badge-text { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(253,250,246,0.5); margin-top: 0.3rem; }
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: rgba(253,250,246,0.3);
+}
+.hero-scroll::after {
+  content: ''; display: block; width: 1px; height: 3rem;
+  background: rgba(253,250,246,0.2); animation: scrollPulse 2s infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:0.2} 50%{opacity:0.8} }
+
+/* ===== MARQUEE ===== */
+.marquee-band {
+  padding: 1.4rem 0; background: var(--mid);
+  overflow: hidden; border-top: 1px solid rgba(200,184,154,0.12);
+  border-bottom: 1px solid rgba(200,184,154,0.12);
+}
+.marquee-track { display: flex; animation: marqueeScroll 25s linear infinite; white-space: nowrap; }
+.marquee-item {
+  font-family: var(--serif); font-size: 0.95rem; font-weight: 300;
+  font-style: italic; color: rgba(200,184,154,0.5); padding: 0 2rem; letter-spacing: 0.05em;
+}
+.marquee-dot { color: var(--stone); padding: 0 0.3rem; font-style: normal; }
+@keyframes marqueeScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ===== STATS BAR ===== */
+.stats-bar {
+  background: var(--stone);
+  display: grid; grid-template-columns: repeat(4,1fr);
+  padding: 2.8rem 4rem; gap: 2rem;
+}
+.stat-item { text-align: center; }
+.stat-num { font-family: var(--serif); font-size: 2.8rem; font-weight: 300; color: var(--dark); line-height: 1; margin-bottom: 0.35rem; }
+.stat-label { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(26,24,20,0.65); font-weight: 400; }
+
+/* ===== PRODUCTS SECTION ===== */
+.products-section { background: var(--dark); }
+.products-header {
+  padding: 5rem 4rem 3rem;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  border-bottom: 1px solid rgba(200,184,154,0.1);
+}
+.products-layout { display: grid; grid-template-columns: 260px 1fr; min-height: 850px; }
+
+/* SIDEBAR */
+.prod-sidebar { background: var(--dark3); border-right: 1px solid rgba(200,184,154,0.1); padding: 2rem 0; }
+.sidebar-head {
+  font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: rgba(200,184,154,0.4); padding: 0 1.5rem; margin-bottom: 1.2rem; font-weight: 400;
+}
+.cat-btn {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 0.8rem 1.5rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  border-left: 2px solid transparent; transition: all 0.2s;
+}
+.cat-btn:hover { background: rgba(200,184,154,0.06); }
+.cat-btn.active { background: rgba(200,184,154,0.1); border-left-color: var(--stone); }
+.cat-btn-label {
+  font-family: var(--serif); font-size: 1rem; font-weight: 400;
+  color: rgba(253,250,246,0.65); transition: color 0.2s;
+}
+.cat-btn:hover .cat-btn-label,
+.cat-btn.active .cat-btn-label { color: var(--white); }
+.cat-btn-badge {
+  font-size: 0.58rem; color: rgba(200,184,154,0.5);
+  background: rgba(200,184,154,0.08); padding: 2px 7px; letter-spacing: 0.06em;
+}
+.sidebar-divider { height: 1px; background: rgba(200,184,154,0.08); margin: 1.2rem 1.5rem; }
+.sidebar-filter-head {
+  font-size: 0.54rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: rgba(200,184,154,0.35); padding: 0.4rem 1.5rem; font-weight: 400;
+}
+.filter-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0.5rem 1.5rem; }
+.filter-chip {
+  font-size: 0.62rem; padding: 4px 10px; letter-spacing: 0.08em;
+  background: rgba(200,184,154,0.06); color: rgba(253,250,246,0.45);
+  border: 1px solid rgba(200,184,154,0.14); cursor: pointer; transition: all 0.2s;
+}
+.filter-chip:hover { background: rgba(200,184,154,0.14); color: var(--stone); border-color: var(--stone); }
+
+/* PRODUCT PANELS */
+.prod-content { padding: 2.5rem 3rem; overflow-y: auto; }
+.prod-panel { display: none; }
+.prod-panel.active { display: block; }
+.panel-title { font-family: var(--serif); font-size: 1.7rem; font-weight: 300; color: var(--white); margin-bottom: 0.4rem; }
+.panel-desc { font-size: 0.75rem; color: rgba(253,250,246,0.38); line-height: 1.75; margin-bottom: 2rem; }
+.subcat-label {
+  font-size: 0.57rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--stone); margin: 2rem 0 1rem;
+  display: flex; align-items: center; gap: 0.8rem; font-weight: 400;
+}
+.subcat-label::after { content:''; flex:1; height:1px; background:rgba(200,184,154,0.12); }
+
+.prod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 2px; }
+.prod-card {
+  background: var(--dark2); padding: 1.4rem 1.2rem;
+  cursor: pointer; transition: background 0.2s; position: relative;
+}
+.prod-card:hover { background: var(--mid2); }
+.prod-card:hover .prod-arrow { opacity: 1; }
+.prod-card-icon { font-size: 1.3rem; margin-bottom: 0.8rem; line-height: 1; }
+.prod-card-swatch {
+  width: 26px; height: 26px; margin-bottom: 0.8rem;
+  border: 1.5px solid rgba(255,255,255,0.12);
+}
+.prod-card-name {
+  font-family: var(--serif); font-size: 0.92rem; font-weight: 400;
+  color: var(--white); line-height: 1.3; margin-bottom: 0.3rem;
+}
+.prod-card-tag { font-size: 0.58rem; color: rgba(200,184,154,0.5); letter-spacing: 0.12em; text-transform: uppercase; }
+.prod-arrow {
+  position: absolute; top: 1rem; right: 1rem;
+  font-size: 0.65rem; color: var(--stone); opacity: 0; transition: opacity 0.2s;
+}
+
+.size-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 2px; }
+.size-tile {
+  background: var(--dark2); padding: 1rem; text-align: center;
+  cursor: pointer; transition: background 0.2s;
+}
+.size-tile:hover { background: rgba(200,184,154,0.12); }
+.size-num { font-family: var(--serif); font-size: 1.3rem; font-weight: 300; color: var(--stone); display: block; margin-bottom: 0.15rem; }
+.size-unit { font-size: 0.58rem; color: rgba(253,250,246,0.3); letter-spacing: 0.12em; text-transform: uppercase; }
+
+.wa-enquiry-bar {
+  background: var(--stone); padding: 1.5rem 3rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  border-top: 1px solid rgba(200,184,154,0.2);
+}
+.wa-enquiry-text strong { font-weight: 500; font-size: 0.9rem; color: var(--dark); display: block; margin-bottom: 0.2rem; }
+.wa-enquiry-text span { font-size: 0.75rem; color: rgba(26,24,20,0.6); }
+.wa-enquiry-btn {
+  background: var(--dark); color: var(--stone);
+  border: none; padding: 0.8rem 2rem;
+  font-family: var(--sans); font-size: 0.65rem; font-weight: 400;
+  letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer;
+  transition: var(--transition); white-space: nowrap;
+}
+.wa-enquiry-btn:hover { background: var(--mid); }
+
+.tags-row { padding: 1.5rem 3rem; background: var(--dark3); border-top: 1px solid rgba(200,184,154,0.08); }
+.tags-head { font-size: 0.56rem; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(200,184,154,0.35); margin-bottom: 0.8rem; font-weight: 400; }
+.tag-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-pill {
+  font-size: 0.65rem; padding: 5px 14px; letter-spacing: 0.1em;
+  border: 1px solid rgba(200,184,154,0.16); color: rgba(253,250,246,0.4);
+  cursor: pointer; transition: all 0.2s;
+}
+.tag-pill:hover { border-color: var(--stone); color: var(--stone); }
+
+/* ===== FEATURED PRODUCTS ===== */
+.featured { background: var(--dark2); padding: 6rem 4rem; }
+.feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem; align-items: start; }
+.feat-main { position: relative; overflow: hidden; }
+.feat-main-img { aspect-ratio: 4/5; background: linear-gradient(145deg, #3A3028 0%, #7A6858 40%, #C8B498 85%); }
+.feat-badge-tag {
+  position: absolute; top: 1.5rem; left: 1.5rem;
+  background: var(--stone); color: var(--dark);
+  font-size: 0.58rem; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; padding: 0.4rem 1rem;
+}
+.feat-info { padding: 1.8rem 0; }
+.feat-name { font-family: var(--serif); font-size: 1.9rem; font-weight: 300; color: var(--white); margin-bottom: 0.5rem; }
+.feat-origin { font-size: 0.68rem; letter-spacing: 0.2em; color: var(--stone); text-transform: uppercase; margin-bottom: 1rem; }
+.feat-desc { font-size: 0.8rem; color: rgba(253,250,246,0.45); line-height: 1.85; max-width: 28rem; margin-bottom: 1.5rem; }
+.feat-side { display: flex; flex-direction: column; gap: 2px; }
+.feat-side-card { display: grid; grid-template-columns: 45% 1fr; overflow: hidden; background: var(--mid2); cursor: pointer; transition: background 0.2s; }
+.feat-side-card:hover { background: var(--mid); }
+.feat-side-img { aspect-ratio: 1; }
+.feat-side-info { padding: 1.2rem 1.4rem; display: flex; flex-direction: column; justify-content: center; }
+.feat-side-name { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--white); margin-bottom: 0.25rem; }
+.feat-side-cat { font-size: 0.6rem; color: var(--stone); letter-spacing: 0.15em; text-transform: uppercase; }
+.fsi1 { background: linear-gradient(130deg, #2A2820 0%, #5A5040 40%, #B8A880 85%); }
+.fsi2 { background: linear-gradient(140deg, #303030 0%, #606060 40%, #A0A0A0 85%); }
+.fsi3 { background: linear-gradient(135deg, #3A2A20 0%, #7A5A40 40%, #C8987A 85%); }
+.fsi4 { background: linear-gradient(140deg, #283028 0%, #506050 40%, #90A890 85%); }
+
+/* ===== ABOUT ===== */
+.about { padding: 6rem 4rem; background: var(--dark); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-imgs { display: grid; grid-template-columns: 55% 1fr; grid-template-rows: 1fr 1fr; gap: 3px; height: 540px; }
+.a-img { }
+.a-img:first-child { grid-row: span 2; }
+.ai1 { background: linear-gradient(150deg, #3A3028 0%, #8A7868 50%, #C8B8A8 100%); }
+.ai2 { background: linear-gradient(130deg, #2A2A28 0%, #6A6858 50%, #A0A090 100%); }
+.ai3 { background: linear-gradient(145deg, #4A3828 0%, #8A6A50 50%, #C0987A 100%); }
+.about-eyebrow { display: flex; align-items: center; gap: 1rem; font-size: 0.62rem; font-weight: 400; letter-spacing: 0.35em; text-transform: uppercase; color: var(--stone); margin-bottom: 1.2rem; }
+.about-eyebrow::before { content:''; display:block; width:2rem; height:1px; background:var(--stone); }
+.about-quote {
+  font-family: var(--serif); font-size: 1.25rem; font-style: italic; font-weight: 300;
+  color: rgba(253,250,246,0.55); line-height: 1.7;
+  border-left: 2px solid var(--stone); padding-left: 1.5rem; margin: 2rem 0;
+}
+.about-body { font-size: 0.8rem; color: rgba(253,250,246,0.45); line-height: 1.9; margin-bottom: 1.2rem; }
+.about-pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5px; margin-top: 2rem; }
+.pillar { background: var(--dark2); padding: 1.2rem; }
+.pillar-num { font-family: var(--serif); font-size: 1.5rem; color: var(--stone); margin-bottom: 0.4rem; }
+.pillar-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(253,250,246,0.45); }
+
+/* ===== PROJECTS ===== */
+.projects { padding: 6rem 4rem; background: #161410; }
+.projects-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; }
+.proj-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.proj-card { position: relative; overflow: hidden; aspect-ratio: 3/4; cursor: pointer; }
+.proj-card:nth-child(2) { aspect-ratio: auto; grid-row: span 2; }
+.proj-bg { position: absolute; inset: 0; transition: transform 0.6s ease; }
+.proj-card:hover .proj-bg { transform: scale(1.04); }
+.proj-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(22,20,16,0.92) 0%, transparent 55%); }
+.proj-info { position: absolute; bottom: 0; padding: 1.5rem; }
+.proj-type { font-size: 0.58rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--stone); margin-bottom: 0.4rem; }
+.proj-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; color: var(--white); }
+.proj-loc { font-size: 0.7rem; color: rgba(253,250,246,0.4); margin-top: 0.2rem; }
+.pb1 { background: linear-gradient(140deg, #302820 0%, #706050 40%, #C0A880 85%); }
+.pb2 { background: linear-gradient(160deg, #282828 0%, #585858 50%, #989890 85%); }
+.pb3 { background: linear-gradient(135deg, #383020 0%, #786040 50%, #B89870 85%); }
+.pb4 { background: linear-gradient(145deg, #302828 0%, #605858 50%, #A09888 85%); }
+
+/* ===== TESTIMONIALS ===== */
+.testimonials { padding: 6rem 4rem; background: var(--dark); }
+.testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; margin-top: 3.5rem; }
+.testi-card { background: var(--dark2); padding: 2.5rem; }
+.testi-stars { color: var(--stone); font-size: 0.62rem; letter-spacing: 0.2em; margin-bottom: 1.4rem; }
+.testi-text {
+  font-family: var(--serif); font-size: 0.98rem; font-weight: 300; font-style: italic;
+  color: rgba(253,250,246,0.7); line-height: 1.8; margin-bottom: 1.8rem;
+}
+.testi-author { display: flex; align-items: center; gap: 1rem; }
+.testi-avatar {
+  width: 2.4rem; height: 2.4rem; background: var(--mid); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 0.85rem; color: var(--stone);
+}
+.testi-name { font-size: 0.76rem; font-weight: 500; color: var(--white); letter-spacing: 0.05em; }
+.testi-role { font-size: 0.65rem; color: var(--warm-grey); margin-top: 0.15rem; }
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+  background: var(--stone);
+  padding: 5rem 4rem;
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4rem;
+}
+.cta-title { font-family: var(--serif); font-size: clamp(2rem, 3vw, 3rem); font-weight: 300; color: var(--dark); line-height: 1.12; }
+.cta-title em { font-style: italic; }
+.cta-sub { font-size: 0.78rem; color: rgba(26,24,20,0.55); margin-top: 1rem; max-width: 30rem; line-height: 1.75; }
+.cta-actions { display: flex; flex-direction: column; gap: 1rem; min-width: 220px; }
+.btn-dark {
+  display: block; background: var(--dark); color: var(--white);
+  padding: 1rem 2rem; text-align: center;
+  font-size: 0.68rem; font-weight: 400; letter-spacing: 0.22em;
+  text-transform: uppercase; border: none; cursor: pointer; transition: var(--transition);
+}
+.btn-dark:hover { background: var(--mid); }
+.btn-outline-dark {
+  display: block; background: transparent; color: var(--dark);
+  border: 1px solid var(--dark); padding: 1rem 2rem; text-align: center;
+  font-size: 0.68rem; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase;
+  cursor: pointer; transition: var(--transition);
+}
+.btn-outline-dark:hover { background: rgba(26,24,20,0.1); }
+
+/* ===== WHATSAPP FLOAT ===== */
+.wa-float {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 900;
+  background: #25D366; width: 3.4rem; height: 3.4rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(37,211,102,0.38); transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 1.4rem; height: 1.4rem; fill: white; }
+
+/* ===== FOOTER ===== */
+footer { background: var(--dark3); padding: 5rem 4rem 2.5rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
+.footer-brand { }
+.footer-logo { font-family: var(--serif); font-size: 1.6rem; font-weight: 500; letter-spacing: 0.15em; color: var(--white); margin-bottom: 1rem; }
+.footer-logo span { color: var(--stone); }
+.footer-tagline { font-size: 0.76rem; color: rgba(253,250,246,0.3); line-height: 1.8; max-width: 22rem; margin-bottom: 1.5rem; }
+.footer-social { display: flex; gap: 0.8rem; }
+.soc-link {
+  width: 2rem; height: 2rem; border: 1px solid rgba(253,250,246,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 500; color: rgba(253,250,246,0.35);
+  transition: all 0.2s;
+}
+.soc-link:hover { border-color: var(--stone); color: var(--stone); }
+.footer-col-title { font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--stone); margin-bottom: 1.4rem; font-weight: 400; }
+.footer-links { display: flex; flex-direction: column; gap: 0.65rem; }
+.footer-links a { font-size: 0.76rem; color: rgba(253,250,246,0.38); transition: color 0.2s; }
+.footer-links a:hover { color: var(--stone); }
+.footer-bottom {
+  border-top: 1px solid rgba(253,250,246,0.06);
+  padding-top: 2rem; display: flex; justify-content: space-between; align-items: center;
+}
+.footer-copy { font-size: 0.65rem; color: rgba(253,250,246,0.2); letter-spacing: 0.08em; }
+.footer-slogan { font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: rgba(200,184,154,0.25); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  nav { padding: 1.2rem 2rem; }
+  .nav-links { gap: 1.5rem; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-left { padding: 7rem 2rem 3rem; min-height: 60vh; }
+  .hero-right { height: 40vh; }
+  .hero-img-grid { grid-template-rows: 1fr; grid-template-columns: 1fr 1fr; }
+  section, .featured, .about, .projects, .testimonials { padding: 4rem 2rem; }
+  .stats-bar { padding: 2rem; grid-template-columns: repeat(2,1fr); }
+  .products-header { padding: 3rem 2rem 2rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .products-layout { grid-template-columns: 1fr; }
+  .prod-sidebar { display: flex; flex-wrap: wrap; gap: 4px; padding: 1rem; border-right: none; border-bottom: 1px solid rgba(200,184,154,0.1); }
+  .sidebar-head, .sidebar-divider, .sidebar-filter-head, .filter-chips { display: none; }
+  .cat-btn { width: auto; padding: 0.5rem 1rem; background: var(--dark2); border-left: none; border-bottom: 2px solid transparent; }
+  .cat-btn.active { background: rgba(200,184,154,0.1); border-bottom-color: var(--stone); }
+  .prod-content { padding: 1.5rem; }
+  .feat-grid { grid-template-columns: 1fr; }
+  .about { grid-template-columns: 1fr; }
+  .about-imgs { height: 300px; }
+  .projects-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .proj-grid { grid-template-columns: 1fr 1fr; }
+  .proj-card:nth-child(2) { grid-row: auto; aspect-ratio: 3/4; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .cta-section { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .wa-enquiry-bar { flex-direction: column; align-items: flex-start; padding: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919100000000" class="wa-float" title="WhatsApp ALV Stones" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="main-nav">
+  <a href="#home" class="nav-logo">ALV <span>Stones</span></a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/919100000000" class="nav-cta" target="_blank">Get a Quote</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Premium Stone Artistry — Hyderabad</div>
+    <h1 class="hero-title">
+      Sacred Stone.<br>
+      <em>Timeless</em><br>
+      Craftsmanship.
+    </h1>
+    <p class="hero-sub">Handcrafted Buddha &amp; Hindu statues, garden sculptures, and architectural stone. Custom-designed by master artisans. Delivered pan-India from our Hyderabad atelier.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary">Explore Collections</a>
+      <a href="#projects" class="btn-ghost">View Our Projects</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-grid">
+      <div class="hero-stone-1" style="transition: transform 8s ease;"></div>
+      <div class="hero-stone-2" style="transition: transform 8s ease;"></div>
+    </div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">500+</div>
+      <div class="hero-badge-text">Projects Delivered</div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span class="marquee-item">Buddha Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Ganesha Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Shiva Sculptures</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Garden Ornaments</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Black Stone</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Marble Carvings</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Brass Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Fountain Sculptures</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Radha Krishna</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Custom Sizes</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Pan-India Delivery</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Stone Planters</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Buddha Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Ganesha Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Shiva Sculptures</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Garden Ornaments</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Black Stone</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Marble Carvings</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Brass Statues</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Fountain Sculptures</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Radha Krishna</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Custom Sizes</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Pan-India Delivery</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">Stone Planters</span><span class="marquee-dot">·</span>
+  </div>
+</div>
+
+<!-- ===== STATS ===== -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Projects Completed</div></div>
+  <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Product Categories</div></div>
+  <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Years of Craft</div></div>
+  <div class="stat-item"><div class="stat-num">Pan&#8209;India</div><div class="stat-label">Delivery Network</div></div>
+</div>
+
+<!-- ===== PRODUCTS ===== -->
+<div class="products-section" id="products">
+  <div class="products-header">
+    <div>
+      <div class="section-eyebrow">Our Collections</div>
+      <h2 class="section-title">All <em>Products</em></h2>
+      <p style="font-size:0.78rem;color:rgba(253,250,246,0.38);margin-top:0.5rem;letter-spacing:0.04em;">7 main categories &nbsp;·&nbsp; 50+ subcategories &nbsp;·&nbsp; Stone, Fibre, Brass, Wood &nbsp;·&nbsp; Custom sizes available</p>
+    </div>
+    <a href="https://wa.me/919100000000" class="btn-outline" target="_blank">Request Custom Design</a>
+  </div>
+
+  <div class="products-layout">
+    <!-- SIDEBAR -->
+    <div class="prod-sidebar">
+      <div class="sidebar-head">Browse Categories</div>
+      <button class="cat-btn active" onclick="showPanel('buddha', this)">
+        <span class="cat-btn-label">Buddha Statues</span>
+        <span class="cat-btn-badge">16+</span>
+      </button>
+      <button class="cat-btn" onclick="showPanel('hindu', this)">
+        <span class="cat-btn-label">Hindu Statues</span>
+        <span class="cat-btn-badge">20+</span>
+      </button>
+      <button class="cat-btn" onclick="showPanel('puja', this)">
+        <span class="cat-btn-label">Puja Items</span>
+        <span class="cat-btn-badge">2+</span>
+      </button>
+      <button class="cat-btn" onclick="showPanel('modern', this)">
+        <span class="cat-btn-label">Modern Statues</span>
+        <span class="cat-btn-badge">4+</span>
+      </button>
+      <button class="cat-btn" onclick="showPanel('garden', this)">
+        <span class="cat-btn-label">Garden Statues</span>
+        <span class="cat-btn-badge">10+</span>
+      </button>
+      <button class="cat-btn" onclick="showPanel('materials', this)">
+        <span class="cat-btn-label">By Material</span>
+        <span class="cat-btn-badge">9</span>
+      </button>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-filter-head">Quick Filter</div>
+      <div class="filter-chips">
+        <span class="filter-chip">Home Decor</span>
+        <span class="filter-chip">Gifts</span>
+        <span class="filter-chip">Garden</span>
+        <span class="filter-chip">Antique</span>
+        <span class="filter-chip">Custom</span>
+        <span class="filter-chip">Vastu</span>
+      </div>
+    </div>
+
+    <!-- PANELS -->
+    <div class="prod-content">
+
+      <!-- BUDDHA -->
+      <div class="prod-panel active" id="panel-buddha">
+        <div class="panel-title">Buddha Statues</div>
+        <p class="panel-desc">Handcrafted Buddha statues in stone, fibre, wood, and more. Available in garden, meditation, and fountain styles. 1 ft to 6 ft sizes in stock. Custom sizes on order.</p>
+
+        <div class="subcat-label">By Style</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🌿</div><div class="prod-card-name">Garden Buddha</div><div class="prod-card-tag">Outdoor</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🪨</div><div class="prod-card-name">Stone Buddha</div><div class="prod-card-tag">Natural Stone</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🪶</div><div class="prod-card-name">Fibre Buddha</div><div class="prod-card-tag">Lightweight</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🌲</div><div class="prod-card-name">Wood Buddha</div><div class="prod-card-tag">Carved Wood</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">💧</div><div class="prod-card-name">Buddha Fountain</div><div class="prod-card-tag">Water Feature</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Buddha Statues by Size</div>
+        <div class="size-grid">
+          <div class="size-tile"><span class="size-num">1</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">18</span><span class="size-unit">Inch</span></div>
+          <div class="size-tile"><span class="size-num">2</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">2.5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">3</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">3.5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">4</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">4.5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">5.5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">6</span><span class="size-unit">Feet</span></div>
+        </div>
+      </div>
+
+      <!-- HINDU -->
+      <div class="prod-panel" id="panel-hindu">
+        <div class="panel-title">Hindu Statues</div>
+        <p class="panel-desc">Sacred devotional masterpieces — Ganesha, Radha Krishna, Durga, Shiva, Hanuman, Lakshmi and more. Available in stone, marble, brass, and fibre across all sizes.</p>
+
+        <div class="subcat-label">Goddess Statues</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🔱</div><div class="prod-card-name">Maa Durga</div><div class="prod-card-tag">Divine Mother</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">⚡</div><div class="prod-card-name">Maa Kali</div><div class="prod-card-tag">Fierce Form</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🎶</div><div class="prod-card-name">Maa Saraswati</div><div class="prod-card-tag">Knowledge</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🪷</div><div class="prod-card-name">Maa Lakshmi</div><div class="prod-card-tag">Prosperity</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🌸</div><div class="prod-card-name">Vishnu Lakshmi</div><div class="prod-card-tag">Divine Pair</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Shiva Family</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🌙</div><div class="prod-card-name">Shiva Statues</div><div class="prod-card-tag">Mahadeva</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🧘</div><div class="prod-card-name">Adiyogi</div><div class="prod-card-tag">Yogi Form</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🪔</div><div class="prod-card-name">Shivalinga</div><div class="prod-card-tag">Sacred Form</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🐂</div><div class="prod-card-name">Nandi Statues</div><div class="prod-card-tag">Shiva's Bull</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">💫</div><div class="prod-card-name">Shiv Parvati</div><div class="prod-card-tag">Divine Couple</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Other Deities</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🌺</div><div class="prod-card-name">Hanuman Statues</div><div class="prod-card-tag">Devotion</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🏹</div><div class="prod-card-name">Ram Sita Statue</div><div class="prod-card-tag">Divine Couple</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">✨</div><div class="prod-card-name">Other Hindu Gods</div><div class="prod-card-tag">All Deities</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Ganesha Statues — by Size</div>
+        <div class="size-grid">
+          <div class="size-tile"><span class="size-num">1</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">18</span><span class="size-unit">Inch</span></div>
+          <div class="size-tile"><span class="size-num">2</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">3</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">4</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">5</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">6</span><span class="size-unit">Feet</span></div>
+        </div>
+
+        <div class="subcat-label">Radha Krishna — by Size</div>
+        <div class="size-grid">
+          <div class="size-tile"><span class="size-num">1</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">18</span><span class="size-unit">Inch</span></div>
+          <div class="size-tile"><span class="size-num">2</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">3</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">4</span><span class="size-unit">Feet</span></div>
+          <div class="size-tile"><span class="size-num">5</span><span class="size-unit">Feet</span></div>
+        </div>
+      </div>
+
+      <!-- PUJA -->
+      <div class="prod-panel" id="panel-puja">
+        <div class="panel-title">Puja Items</div>
+        <p class="panel-desc">Sacred ritual objects crafted in stone and metal — urlis, lamps, and diyas for home temples and ceremonial spaces.</p>
+        <div class="subcat-label">Collection</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🪔</div><div class="prod-card-name">Urli</div><div class="prod-card-tag">Stone &amp; Brass</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">💡</div><div class="prod-card-name">Diyas &amp; Lamps</div><div class="prod-card-tag">Ritual Lighting</div><div class="prod-arrow">→</div></div>
+        </div>
+      </div>
+
+      <!-- MODERN -->
+      <div class="prod-panel" id="panel-modern">
+        <div class="panel-title">Modern Statues</div>
+        <p class="panel-desc">Contemporary sculpture for luxury homes, offices, and galleries. Bold artistic statements in stone and mixed media. Custom commissions welcome.</p>
+        <div class="subcat-label">Collection</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🎨</div><div class="prod-card-name">Pop Art Sculptures</div><div class="prod-card-tag">Contemporary Art</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🗿</div><div class="prod-card-name">Abstract Forms</div><div class="prod-card-tag">Custom Design</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🏛️</div><div class="prod-card-name">Architectural Accents</div><div class="prod-card-tag">Statement Piece</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🌀</div><div class="prod-card-name">Minimalist Forms</div><div class="prod-card-tag">Modern Luxury</div><div class="prod-arrow">→</div></div>
+        </div>
+      </div>
+
+      <!-- GARDEN -->
+      <div class="prod-panel" id="panel-garden">
+        <div class="panel-title">Garden Statues</div>
+        <p class="panel-desc">Transform outdoor spaces with premium stone ornaments — animal sculptures, angel statues, bird baths, wall murals, fountain sculptures, and handcrafted stone planters.</p>
+
+        <div class="subcat-label">Decorative Garden</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🌿</div><div class="prod-card-name">Garden Ornaments</div><div class="prod-card-tag">Landscape Decor</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🏺</div><div class="prod-card-name">Antique Statues</div><div class="prod-card-tag">Heritage Style</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">👼</div><div class="prod-card-name">Angel Statues</div><div class="prod-card-tag">Celestial</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🐦</div><div class="prod-card-name">Bird Bath</div><div class="prod-card-tag">Garden Feature</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">⛲</div><div class="prod-card-name">Fountain Sculptures</div><div class="prod-card-tag">Water Feature</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🖼️</div><div class="prod-card-name">Wall Mural</div><div class="prod-card-tag">Stone Relief</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Animal Statues</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🐘</div><div class="prod-card-name">Elephant Statue</div><div class="prod-card-tag">Prosperity Symbol</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🦁</div><div class="prod-card-name">Lion Statue</div><div class="prod-card-tag">Guardian</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🐎</div><div class="prod-card-name">Horse Statue</div><div class="prod-card-tag">Vastu</div><div class="prod-arrow">→</div></div>
+        </div>
+
+        <div class="subcat-label">Planters</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🪴</div><div class="prod-card-name">Stone Planters</div><div class="prod-card-tag">Hand Carved</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🏵️</div><div class="prod-card-name">Decorative Urns</div><div class="prod-card-tag">Statement Planters</div><div class="prod-arrow">→</div></div>
+        </div>
+      </div>
+
+      <!-- MATERIALS -->
+      <div class="prod-panel" id="panel-materials">
+        <div class="panel-title">Browse by Material</div>
+        <p class="panel-desc">Every statue is available in your choice of material. Stone varieties quarried and finished in-house. Fibre, brass, and wood from verified artisan partners.</p>
+
+        <div class="subcat-label">Stone Varieties</div>
+        <div class="prod-grid">
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#1A1814;border-color:#444;"></div>
+            <div class="prod-card-name">Black Stone</div><div class="prod-card-tag">Premium Finish</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#C8A870;border-color:#A88850;"></div>
+            <div class="prod-card-name">Sandstone</div><div class="prod-card-tag">Warm &amp; Natural</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#9A9A8A;border-color:#7A7A6A;"></div>
+            <div class="prod-card-name">Soapstone</div><div class="prod-card-tag">Soft Carving</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#E8E0D8;border-color:#C8B8A8;"></div>
+            <div class="prod-card-name">Marble</div><div class="prod-card-tag">Pure White</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#607850;border-color:#405830;"></div>
+            <div class="prod-card-name">Green Stone</div><div class="prod-card-tag">Rare Variety</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#302820;border-color:#201810;"></div>
+            <div class="prod-card-name">Kadappa Stone</div><div class="prod-card-tag">Deep Dark</div><div class="prod-arrow">→</div>
+          </div>
+          <div class="prod-card">
+            <div class="prod-card-swatch" style="background:#C8A850;border-color:#A07830;"></div>
+            <div class="prod-card-name">Onyx Stone</div><div class="prod-card-tag">Translucent</div><div class="prod-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="subcat-label">Other Materials</div>
+        <div class="prod-grid">
+          <div class="prod-card"><div class="prod-card-icon">🪶</div><div class="prod-card-name">Fibre Statues</div><div class="prod-card-tag">Lightweight · Durable</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">✦</div><div class="prod-card-name">Brass Statues</div><div class="prod-card-tag">Traditional Craft</div><div class="prod-arrow">→</div></div>
+          <div class="prod-card"><div class="prod-card-icon">🌲</div><div class="prod-card-name">Wooden Statues</div><div class="prod-card-tag">Hand Carved</div><div class="prod-arrow">→</div></div>
+        </div>
+      </div>
+
+    </div><!-- end prod-content -->
+  </div><!-- end products-layout -->
+
+  <!-- WA BAR -->
+  <div class="wa-enquiry-bar">
+    <div class="wa-enquiry-text">
+      <strong>Can't find what you're looking for?</strong>
+      <span>All statues available in custom sizes &amp; materials. WhatsApp us for bespoke orders &amp; bulk pricing.</span>
+    </div>
+    <a href="https://wa.me/919100000000" class="wa-enquiry-btn" target="_blank">WhatsApp for Custom Order</a>
+  </div>
+
+  <!-- TAGS -->
+  <div class="tags-row">
+    <div class="tags-head">Browse by Tag</div>
+    <div class="tag-pills">
+      <span class="tag-pill">Angel Statues</span>
+      <span class="tag-pill">Gifts</span>
+      <span class="tag-pill">Home Decor</span>
+      <span class="tag-pill">Garden Statues</span>
+      <span class="tag-pill">Modern Statues</span>
+      <span class="tag-pill">Stone Statues</span>
+      <span class="tag-pill">Wood Buddha</span>
+      <span class="tag-pill">Stone Buddha</span>
+      <span class="tag-pill">Fibre Statues</span>
+      <span class="tag-pill">Brass Statues</span>
+      <span class="tag-pill">Antique</span>
+      <span class="tag-pill">Pan-India Delivery</span>
+      <span class="tag-pill">Custom Design</span>
+      <span class="tag-pill">Vastu Items</span>
+      <span class="tag-pill">Wedding Gifts</span>
+      <span class="tag-pill">Temple Decor</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="featured" id="featured">
+  <div class="section-eyebrow">Curated Selection</div>
+  <h2 class="section-title">Featured <em>Products</em></h2>
+  <div class="feat-grid">
+    <div class="feat-main">
+      <div class="feat-main-img"></div>
+      <div class="feat-badge-tag">Signature Piece</div>
+      <div class="feat-info">
+        <div class="feat-name">Black Stone Ganesha</div>
+        <div class="feat-origin">Material: Premium Black Stone · 3 Feet</div>
+        <p class="feat-desc">Hand-sculpted from solid black stone by our master artisans. Intricate detailing on the crown, trunk, and mudra. Available in all sizes from 1 ft to 6 ft. Custom finishes on request — polished, antique, or natural matte.</p>
+        <a href="https://wa.me/919100000000" class="btn-primary" target="_blank">Enquire on WhatsApp</a>
+      </div>
+    </div>
+    <div class="feat-side">
+      <div class="feat-side-card">
+        <div class="feat-side-img fsi1"></div>
+        <div class="feat-side-info">
+          <div class="feat-side-name">Garden Buddha Statue</div>
+          <div class="feat-side-cat">Stone · Outdoor</div>
+        </div>
+      </div>
+      <div class="feat-side-card">
+        <div class="feat-side-img fsi2"></div>
+        <div class="feat-side-info">
+          <div class="feat-side-name">Adiyogi Shiva</div>
+          <div class="feat-side-cat">Marble · 4 Feet</div>
+        </div>
+      </div>
+      <div class="feat-side-card">
+        <div class="feat-side-img fsi3"></div>
+        <div class="feat-side-info">
+          <div class="feat-side-name">Radha Krishna Pair</div>
+          <div class="feat-side-cat">Brass · 2 Feet</div>
+        </div>
+      </div>
+      <div class="feat-side-card">
+        <div class="feat-side-img fsi4"></div>
+        <div class="feat-side-info">
+          <div class="feat-side-name">Stone Elephant Statue</div>
+          <div class="feat-side-cat">Green Stone · Garden</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-imgs">
+    <div class="a-img ai1"></div>
+    <div class="a-img ai2"></div>
+    <div class="a-img ai3"></div>
+  </div>
+  <div>
+    <div class="about-eyebrow">Our Story</div>
+    <h2 class="section-title">Hyderabad's<br><em>Stone Atelier</em></h2>
+    <blockquote class="about-quote">"Every stone carries the memory of centuries. We simply help it find its rightful place in your space."</blockquote>
+    <p class="about-body">ALV Stones was founded on the belief that premium stone is not merely a material — it is a statement of devotion, art, and intent. Our atelier in Hyderabad works with master craftsmen to translate raw stone into sacred and architectural works of art.</p>
+    <p class="about-body">From intimate home temples with handcrafted Ganesha statues to grand commercial lobbies with monumental Buddha sculptures, our stone tells stories that endure through generations. Every piece is made-to-order with attention to the buyer's vision.</p>
+    <div class="about-pillars">
+      <div class="pillar"><div class="pillar-num">01</div><div class="pillar-label">Master Artisans</div></div>
+      <div class="pillar"><div class="pillar-num">02</div><div class="pillar-label">Custom Sizing</div></div>
+      <div class="pillar"><div class="pillar-num">03</div><div class="pillar-label">Pan-India Delivery</div></div>
+    </div>
+    <a href="#contact" class="btn-primary" style="margin-top:2rem;display:inline-block;">Contact Our Team</a>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-eyebrow">Portfolio</div>
+      <h2 class="section-title">Recent <em>Installations</em></h2>
+    </div>
+    <a href="https://wa.me/919100000000" class="btn-ghost" target="_blank">All Projects →</a>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <div class="proj-bg pb1"></div>
+      <div class="proj-overlay"></div>
+      <div class="proj-info">
+        <div class="proj-type">Residential</div>
+        <div class="proj-name">Villa Temple Room</div>
+        <div class="proj-loc">Jubilee Hills, Hyderabad</div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-bg pb2"></div>
+      <div class="proj-overlay"></div>
+      <div class="proj-info">
+        <div class="proj-type">Commercial</div>
+        <div class="proj-name">Corporate Lobby Buddha</div>
+        <div class="proj-loc">Banjara Hills, Hyderabad</div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-bg pb3"></div>
+      <div class="proj-overlay"></div>
+      <div class="proj-info">
+        <div class="proj-type">Garden Installation</div>
+        <div class="proj-name">Estate Garden Sculptures</div>
+        <div class="proj-loc">Gachibowli, Hyderabad</div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-bg pb4"></div>
+      <div class="proj-overlay"></div>
+      <div class="proj-info">
+        <div class="proj-type">Temple Project</div>
+        <div class="proj-name">Shiva Temple Installation</div>
+        <div class="proj-loc">Secunderabad, Telangana</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="section-eyebrow">Client Voices</div>
+  <h2 class="section-title">What Our <em>Clients Say</em></h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★ ★ ★ ★ ★</div>
+      <p class="testi-text">"The Black Stone Ganesha we ordered for our new home is beyond magnificent. The craftsmanship, the weight, the detailing — it is a masterpiece. ALV Stones delivered exactly what they promised, on time and perfectly packed."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AR</div>
+        <div>
+          <div class="testi-name">Arun Reddy</div>
+          <div class="testi-role">Homeowner · Jubilee Hills, Hyderabad</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★ ★ ★ ★ ★</div>
+      <p class="testi-text">"I needed a 5-feet garden Buddha for our resort entrance. ALV Stones not only delivered a flawless piece but also advised on placement and finish. Their knowledge of stone is unmatched. Highly recommend for commercial projects."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PK</div>
+        <div>
+          <div class="testi-name">Priya Krishnamurthy</div>
+          <div class="testi-role">Resort Owner · Lonavala, Maharashtra</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★ ★ ★ ★ ★</div>
+      <p class="testi-text">"Ordered a complete set — Radha Krishna in brass, a stone Nandi, and a marble Shivalinga — for our new home temple. Each piece was perfectly proportioned and the finishing was exceptional. WhatsApp communication was seamless throughout."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SM</div>
+        <div>
+          <div class="testi-name">Suresh Mehta</div>
+          <div class="testi-role">Homeowner · Bangalore, Karnataka</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<div class="cta-section" id="contact">
+  <div>
+    <h2 class="cta-title">Begin Your Custom<br><em>Stone Journey</em> Today</h2>
+    <p class="cta-sub">Speak with our stone consultants for a complimentary consultation. We guide you on material, size, finish, and installation. Pan-India delivery available.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="https://wa.me/919100000000" class="btn-dark" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a href="tel:+919100000000" class="btn-outline-dark">Call Us Now</a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">ALV <span>Stones</span></div>
+      <p class="footer-tagline">Premium handcrafted stone statues, sacred sculptures, and garden ornaments. Artisan-made in Hyderabad. Delivered pan-India with care.</p>
+      <div class="footer-social">
+        <a href="#" class="soc-link">in</a>
+        <a href="#" class="soc-link">ig</a>
+        <a href="#" class="soc-link">fb</a>
+        <a href="https://wa.me/919100000000" class="soc-link">wa</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links">
+        <li><a href="#products">Buddha Statues</a></li>
+        <li><a href="#products">Hindu Statues</a></li>
+        <li><a href="#products">Garden Statues</a></li>
+        <li><a href="#products">Puja Items</a></li>
+        <li><a href="#products">Modern Statues</a></li>
+        <li><a href="#products">By Material</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#about">About ALV Stones</a></li>
+        <li><a href="#projects">Our Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#featured">Featured Products</a></li>
+        <li><a href="https://wa.me/919100000000">Custom Orders</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="https://wa.me/919100000000">WhatsApp Us</a></li>
+        <li><a href="tel:+919100000000">Call Now</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+        <li><a href="#">Visit Showroom</a></li>
+        <li><a href="#">Hyderabad, Telangana</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 ALV Stones, Hyderabad. All rights reserved.</span>
+    <span class="footer-slogan">Carved from the earth. Built for eternity.</span>
+  </div>
+</footer>
+
+<script>
+function showPanel(id, btn) {
+  document.querySelectorAll('.prod-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id], div[id]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
